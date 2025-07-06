@@ -1,8 +1,8 @@
-NAME = moar_brainz
+NAME = ptr_ref
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++17
 
-SRC = main.cpp newZombie.cpp zombieHorde.cpp Zombie.cpp
+SRC = main.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
