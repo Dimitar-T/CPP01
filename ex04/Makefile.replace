@@ -1,0 +1,25 @@
+dsadasNAME = trace_replace
+dsadasCC = c++
+dsadasCFLAGS = -Wall -Wextra -Werror -std=c++17
+dsadas
+dsadasSRC = main.cpp
+dsadas
+dsadasOBJ = $(SRC:.cpp=.o)
+dsadas
+dsadasall: $(NAME)
+dsadas
+dsadas$(NAME): $(OBJ)
+dsadas	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+dsadas
+dsadasclean:
+dsadas	rm -f $(OBJ)
+dsadas
+dsadasfclean: clean
+dsadas	rm -f $(NAME)
+dsadas
+dsadasre: fclean all
+dsadas
+dsadasparty:
+dsadas	curl parrot.live
+dsadas
+dsadas.PHONY: all clean fclean re party
