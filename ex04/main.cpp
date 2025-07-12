@@ -6,7 +6,7 @@
 /*   By: dtrendaf <dtrendaf@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/08 17:46:03 by dtrendaf          #+#    #+#             */
-/*   Updated: 2025/07/08 20:22:27 by dtrendaf         ###   ########.fr       */
+/*   Updated: 2025/07/12 14:39:03 by dtrendaf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,11 +42,16 @@ int main(int argc, char **argv)
 	std::getline (input, line);
 	while (input)
 	{
-		std::size_t found = line.find(argv[2]);
-		if (found != -1)
+		std::string::iterator it = line.begin();
+		while (it!= line.end())
 		{
-			line.erase(found, std::string(argv[2]).size());
-			line.insert(found, argv[3]);
+			std::size_t found = line.find(argv[2]);
+			if (found != -1)
+			{
+				line.erase(found, std::string(argv[2]).size());
+				line.insert(found, argv[3]);
+			}
+			it++;
 		}
 		output << line;
 		if (std::getline (input, line))

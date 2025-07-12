@@ -6,12 +6,16 @@
 /*   By: dtrendaf <dtrendaf@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 13:00:56 by dtrendaf          #+#    #+#             */
-/*   Updated: 2025/07/09 13:09:00 by dtrendaf         ###   ########.fr       */
+/*   Updated: 2025/07/12 14:34:47 by dtrendaf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef HARL_HPP
 #define HARL_HPP
+
+# include <iomanip>
+# include <iostream>
+
 class Harl
 {
   private:
